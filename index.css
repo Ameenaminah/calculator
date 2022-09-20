@@ -6,13 +6,17 @@ body {
     background: black;
 }
 
-span {
+input {
     border-bottom: 2px solid black;
     padding: 4px;
     margin-bottom: 50px;
     font-weight: bold;
     margin: 0 5px;
-}
+    width: 50px;
+    line-height: 30px;
+    text-align: center;
+    font-size: large;
+ }
 .main {
      background-image: url("https://media.istockphoto.com/photos/african-american-accountant-or-auditor-picture-id1338373163?b=1&k=20&m=1338373163&s=170667a&w=0&h=B1xgdVwhyldLED68DXSrp0HejfTmK0xst1hgImA1loI=");
      background-size: cover;
