@@ -1,23 +1,38 @@
 
-let num1 = 15;
-let num2 = 5
-document.getElementById("num1-el").textContent = num1;
-document.getElementById("num2-el").textContent = num2;
-let sumEl = document.getElementById("sum-el");
+const num1El = document.getElementById("num1-el");
+const num2El = document.getElementById("num2-el");
+const sumEl = document.getElementById("sum-el");
+const addBtn = document.getElementById("add-btn");
+const subtractBtn = document.getElementById("subtract-btn");
+const divideBtn = document.getElementById("divide-btn");
+const multiplyBtn = document.getElementById("multiply-btn");
+let total = 0;
 
-function add() {
-    let total = num1 + num2;
-    sumEl.textContent = "Sum: " + total
-}
-function subtract() {
-    let total = num1 - num2;
-    sumEl.textContent = "Sum: " + total
-}
-function divide() {
-    let total = num1 / num2;
-    sumEl.textContent = "Sum: " + total
-}
-function multiply() {
-    let total = num1 * num2;
-    sumEl.textContent = "Sum: " + total
-}
+
+addBtn.addEventListener("click", () => {
+    let inputValue = num1El.value;
+    inputValue += num2El.value;
+    sumEl.textContent = "Sum: " + inputValue
+
+});
+
+subtractBtn.addEventListener("click", () => {
+    let inputValue = num1El.value;
+    inputValue -= num2El.value;
+    sumEl.textContent = "Sum: " + inputValue;
+
+});
+
+divideBtn.addEventListener("click", () => {
+    let inputValue = num1El.value;
+    inputValue /= num2El.value;
+    sumEl.textContent = "Sum: " + inputValue;
+
+});
+
+multiplyBtn.addEventListener("click", () => {
+    let inputValue = num1El.value;
+    inputValue *= num2El.value;
+    sumEl.textContent = "Sum: " + inputValue;
+
+});
